@@ -135,6 +135,11 @@ Contribution quality standards
   not be accepted.
 * `Run all the tests`_ **on all versions of Python supported by Pelican** to
   ensure nothing was accidentally broken.
+* `Run htmlbeautifier`_ with the following options if you made changes to the
+  example themes to ensure formatting is consistent::
+
+    gem install htmlbeautifier  # If not installed already
+    htmlbeautifier -t 4 -b 1 pelican/themes/**/*.html
 
 Check out our `Git Tips`_ page or `ask for help`_ if you
 need assistance or have any questions about these guidelines.
@@ -144,6 +149,7 @@ need assistance or have any questions about these guidelines.
 .. _`Create a new git branch`: https://github.com/getpelican/pelican/wiki/Git-Tips#making-your-changes
 .. _`Squash your commits`: https://github.com/getpelican/pelican/wiki/Git-Tips#squashing-commits
 .. _`Run all the tests`: http://docs.getpelican.com/en/latest/contribute.html#running-the-test-suite
+.. _`Run htmlbeautifier`: https://github.com/threedaymonk/htmlbeautifier
 .. _`Git Tips`: https://github.com/getpelican/pelican/wiki/Git-Tips
 .. _`PEP8 coding standards`: http://www.python.org/dev/peps/pep-0008/
 .. _`ask for help`: `How to get help`_
